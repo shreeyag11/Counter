@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>    </head>
+    <body>
+        <div id="demo">
+             <Counter name="Hello"></Counter>
+             <Counter name="World"></Counter>      
+             <Counter :name="i"></Counter>
+             <Counter name="xyz"></Counter>
+        </div>
+
+        <script src="/main.1f19ae8e.js">Vue.component('Counter', {
+  props: ['name'],
+  template: "\n                <div>\n                    <h1>{{counter}}</h1>\n                    <button @click=\"counter++\">Click me</button>\n                    <h1>{{name}}</h1>\n                </div>",
+  data: function data() {
+    return {
+      counter: 0
+    };
+  }
+});
+var app = new Vue({
+  el: '#demo',
+  data: {
+    i: "Shreeya"
+  },
+  methods: {
+    count: function count() {
+      this.counter += 1;
+    }
+  }
+});</script>
+    </body>
+</html>
