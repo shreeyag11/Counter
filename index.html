@@ -1,6 +1,7 @@
-<!-- <html>
+<html>
     <head>
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>    </head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>    
+    </head>
     <body>
         <div id="demo">
              <Counter name="Hello"></Counter>
@@ -9,32 +10,6 @@
              <Counter name="xyz"></Counter>
         </div>
 
-        <script src="main.js">
-            Vue.component('C ounter', {
-                props: ['name'],
-                template: `
-                <div>
-                    <h1>{{counter}}</h1>
-                    <button @click="counter++">Click me</button>
-                    <h1>{{name}}</h1>
-                </div>`,
-                data: () => {
-                    return {
-                        counter: 0
-                    };
-                }
-            })
-            var app = new Vue({
-                el: '#demo',
-                data: {
-                    i: "Shreeya"
-                },
-                methods: {
-                    count: function(){
-                        this.counter += 1
-                    }
-                }
-            })
-        </script>
+        <script src="main.js"></script>
     </body>
-</html> -->
+</html>

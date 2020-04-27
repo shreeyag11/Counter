@@ -1,7 +1,11 @@
-import Vue from "vue";
-import App from "./App.vue";
+import Counter from "./Counter.vue";
 
 var app = new Vue({
     el: '#demo',
-    render: h => h(App)
+    data: {
+        i: "Vue"
+    },
+    components: {
+        counter: Counter
+    }
 })
